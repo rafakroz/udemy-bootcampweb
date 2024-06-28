@@ -1,0 +1,26 @@
+/* Write your code here: */
+
+/*Grupo de seletores*/
+h1, h2 {
+    color: blueviolet;
+}
+
+/*Selecionado o filho de um seletor*/
+.box > p {
+    color: firebrick;
+}
+
+/*COmbinação com seletores descendentes*/
+.box li {
+    color: blue;
+}
+
+/*Encadeamento de seletores*/
+li.done {
+    color: seagreen;
+}
+
+/*Ancestralidade com encadeamento*/
+ul p.done {
+    font-size: 0.5rem;
+}
