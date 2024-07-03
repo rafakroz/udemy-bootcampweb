@@ -6,38 +6,48 @@
   <title>CSS Flag Project</title>
   <style>
     /* Write your CSS Code here */
+    
+    /* Red rectangle */
     .flag {
-      background-color: #ce1126;
       width: 900px;
       height: 600px;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    .flag > p {
-      font-size: 80px;
-      color: white;
-    }
-
-    .flag > div {
-      background-color: #002868 ;
-    }
-
-    .flag > div > div {
-      background-color: #fff;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      background-color: #ce1126;
       position: relative;
     }
 
-    .flag > div > div > p {
-      font-size: 80px;
-      color: black;
+    /* Blue rectangle */
+    .flag > div {
+      width: 100%; /*A div ocupará 100% da div parent*/
+      height: 300px; /*Altura com extamente a metade da altura da div parent*/
+      background-color: #002868;
+      position: absolute;
+      top: 150px;
+    }
+    
+    /* White rectangle */
+    .flag > div > div {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 350px;
     }
 
+    /*Todos os elementos p*/
+    p {
+      margin: 0;
+      font-size: 5rem;
+      text-align: center;
+      color: #fff;
+    }
+    /*O elemento p tem margem por padrão e estava influenciando na posição do blue rectangle*/
 
+    .flag > div > div > p {
+      color: black;
+    }
+    
   </style>
 </head>
 
